@@ -1,0 +1,22 @@
+.product {
+  display: inline-block; /* Display products in a row */
+  margin: 5px; /* Add some margin around each product */
+  width: 200px; /* Set a fixed width for the product */
+  text-align: center; /* Center content */
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Make the image container take full width */
+  padding-bottom: 100%; /* Maintain aspect ratio (1:1 in this case) */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the image takes full width of its container */
+  height: 100%; /* Ensure the image takes full height of its container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
