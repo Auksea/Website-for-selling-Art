@@ -23,8 +23,8 @@ app.post('/send-email', async (req, res) => {
   });
 
   const mailOptions = {
-    from: 'interest120@gmail.com',
-    to: 'interest120@gmail.com',
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: 'Nauja žinutė nuo kliento art-bernadeta',
     text: `Vardas: ${name}\nKliento el.paštas: ${email}\nŽinutė: ${message}`,
   };
