@@ -1,3 +1,4 @@
+process.env.NODE_ENV = 'production';
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
