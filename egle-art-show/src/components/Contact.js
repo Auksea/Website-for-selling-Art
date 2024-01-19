@@ -31,6 +31,8 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
+      console.log('Server response:', response);
+
       if (response.ok) {
         console.log('Email sent successfully');
         setFormData({ name: '', email: '', message: '' });
@@ -42,6 +44,7 @@ const Contact = () => {
         setSuccess(false);
       }
     } catch (error) {
+      console.error('Error during fetch:', error);
       console.error('Error sending email:', error);
       setError('There was an unexpected error. Please try again later.');
       setSuccess(false);
@@ -96,4 +99,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
