@@ -8,7 +8,7 @@ const Footer1 = () => {
     <footer className="footer-container">
       <div className="contact-info">
         <h5>Contact Us</h5>
-        <p>Email: 29spalvos@gmail.com</p>
+        <p>Email: interest120@gmail.com</p>
       </div>
       <div className="social-icons">
         <a href="https://www.facebook.com/egle.tarnapaviciute">

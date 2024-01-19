@@ -17,10 +17,9 @@ const products = [
     { id: 28, name: 'Objective', price: 120, description: 'Size: 40*40*1.5cm' },
     { id: 29, name: 'Up', price: 120, description: 'Size: 50*60*1.5cm'},
     { id: 30, name: 'From afar', price: 120, description: 'Aprašymas apie paveikslą' },
-    { id: 31, name: 'Creation of a planet', price: 120, description: 'Size as one - 60*40*1.5 cm/ separate 40*30*1.5 cm' },
     { id: 32, name: 'Vision', price: 120, description: 'Size: 50*40cm' },
     { id: 33, name: 'The ocean', price: 120, description: 'Size: 50*70*1.5cm' },
-    { id: 34, name: 'Planetos sukūrimas', price: 120, description: 'Aprašymas apie paveikslą' },
+    { id: 34, name: 'Planetos sukūrimas', price: 120, description: 'Size as one - 60*40*1.5 cm/ separate 40*30*1.5 cm' },
     { id: 35, name: 'Hope', price: 120, description: 'Size: 32*41*1.5cm' },
     { id: 36, name: 'Tree', price: 120, description: 'Size: 24*30*1.5cm' },
 

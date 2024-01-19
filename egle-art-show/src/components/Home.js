@@ -35,7 +35,7 @@ const Home = () => {
     { src: '/pics/pic28.jpg', description: ''},
     { src: '/pics/pic29.jpg', description: ''},
     { src: '/pics/pic30.jpg', description: ''},
-    { src: '/pics/pic31.jpg', description: ''},
+    { },
     { src: '/pics/pic32.jpg', description: ''},
     { src: '/pics/pic33.jpg', description: ''},
     { src: '/pics/pic34.jpg', description: ''},
