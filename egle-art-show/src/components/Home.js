@@ -43,6 +43,7 @@ const Home = () => {
     { src: '/pics/pic36.jpg', description: ''},
     { src: '/pics/pic37.jpg', description: ''},
     // Add more painting objects as needed
+    //Change numbers and so on of places
   ];
 
   return (
