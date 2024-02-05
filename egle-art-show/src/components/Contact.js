@@ -23,7 +23,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3001/send-email', {
+      const response = await fetch('http://45.93.137.251:3001/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
