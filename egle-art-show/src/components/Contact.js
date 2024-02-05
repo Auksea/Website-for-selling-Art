@@ -23,13 +23,13 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://45.93.137.251:3001/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch('http://45.93.137.251:3001/send-email', {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json',
+    },
+     body: JSON.stringify(formData),
+    });
 
       console.log('Server response:', response);
 
