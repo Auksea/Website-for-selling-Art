@@ -1,0 +1,20 @@
+.store-carousel {
+    height: 300px;
+  }
+  
+  .store-carousel-control-prev,
+  .store-carousel-control-next {
+    display: none;
+  }
+  
+  .store-carousel-indicators {
+    display: none;
+  }
+  
+  .store-carousel-item {
+    text-align: center;
+  }
+  
+  .store-carousel-item img {
+    max-height: 100%;
+  }

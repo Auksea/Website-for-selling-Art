@@ -36,3 +36,31 @@
   .product-details {
     flex-grow: 1;
   }
+
+  .store {
+    position: relative;
+  }
+  
+  .store-heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .store-carousel {
+    height: 250px;
+    margin-bottom: 50px;
+  }
+  
+  .store-carousel .carousel {
+    height: 250%;
+  }
+  
+  .store-carousel .carousel-item {
+    text-align: center;
+  }
+  
+  .store-carousel .carousel-item img {
+    max-height: 250px;
+    max-width: 100%;
+  }

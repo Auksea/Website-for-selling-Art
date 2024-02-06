@@ -5,15 +5,18 @@ import Cart from './Cart';
 import './Cart.css';
 import products from './productsData';
 import './Store.css';
+import StoreCarousel from './StoreCarousel';
 
 const Store = ({ addToCart, cart, handleCheckout, removeFromCart }) => {
-  console.log('Store Component - Cart:', cart);
-
+  
   return (
   <div>
     <Cart cartItems={cart} handleCheckout={handleCheckout} removeFromCart={removeFromCart} />
     <div className="store">
       <h1 className='heading'>Store</h1>
+      <div className="store-carousel">
+        <StoreCarousel />
+      </div>
       <div className="products">
         {products.map((product) => (
           <div key={product.id}>
