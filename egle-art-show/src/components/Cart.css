@@ -1,6 +1,6 @@
 .cart-container {
     position: fixed;
-    top: 80px; /* Adjust the distance from the top */
+    top: 80px;
     right: 20px;
     z-index: 1000;
   }
@@ -26,14 +26,14 @@
 
   .cart-details {
     position: absolute;
-    top: 30px; /* Adjust the distance from the icon */
+    top: 20px;
     right: 0;
     background-color: white;
     border: 1px solid #ccc;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 300px; /* Adjust the width of the cart details */
+    width: 300px;
   }
 
   .checkout-button {
@@ -56,7 +56,7 @@
   .remove-button{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 1px;
-    color: purple;
+    color: black;
     position: absolute;
     right: 15px;
   }

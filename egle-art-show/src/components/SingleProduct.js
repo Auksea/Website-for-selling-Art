@@ -24,7 +24,6 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
     addToCart(product);
   };
 
-  // Split the description into an array of lines
   const descriptionLines = description.split('\n');
 
   return (
@@ -33,13 +32,13 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
       <div className="product-container">
         <div className="product-details">
         <h2>{name}</h2>
+        <p>Price: {price}€ <br/> This is only the initial price from which we can negotiate, contact us personally</p>
+        <button onClick={handleAddToCart}>Add to Cart</button>
           <p>{size}</p>
           {descriptionLines.map((line, index) => (
             <p key={index}>{line}</p>
           ))}
           <p>Acrylic, gesso-textures, mixed. Canvas 100% cotton</p>
-          <p>Price: {price}€</p>
-          <button onClick={handleAddToCart}>Add to Cart</button>
         </div>
         <div className="product-image">
           <img src={productImage} alt={name} />

@@ -1,5 +1,5 @@
 const products = [
-    { id: 19, name: 'Dot', price: 100, description: 'Size: 30*30*1.5cm' },
+    { id: 19, name: 'Dot', price: 120, description: 'Size: 30*30*1.5cm' },
     { id: 20, name: 'Labai šalta', price: 120, description: 'Size: 30*40*1,5cm' },
     { id: 21, name: 'Success', price: 120, description: 'Size as one -50*40*1.5cm/ separate 20*50*1.5 cm' },
     { id: 22, name: 'Soul integration', price: 120, description: 'Size: 50*40cm' },
