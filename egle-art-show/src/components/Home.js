@@ -1,19 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 
 const Home = () => {
+  const { t } = useTranslation();
+
+
   const paintings = [
-    { src: '/pics/pic1.jpg', description: 'ACRYLIC ABSTRACT ART' },
-    { src: '/pics/pic2.jpg', description: 'It was born at the beginning of the 20th century and was completely radical for its time' },
-    { src: '/pics/pic3.jpg', description: 'The main purpose of abstraction in art is not to tell a story, but to encourage involvement and imagination' },
-    { src: '/pics/pic4.jpg', description: 'Abstract artists use a variety of techniques to create their work, mixing traditional means with more experimental idea' },
-    { src: '/pics/pic5.jpg', description: 'Freedom of form and interpretation' },
-    { src: '/pics/pic6.jpg', description: '' },
-    { src: '/pics/pic7.jpg', description: '' },
-    { src: '/pics/pic8.jpg', description: '' },
-    { src: '/pics/pic9.jpg', description: '' },
+    { src: '/pics/pic1.jpg', descriptionKey: 'paintings.painting1', description: 'ACRYLIC ABSTRACT ART' },
+    { src: '/pics/pic2.jpg', descriptionKey: 'paintings.painting2', description: 'It was born at the beginning of the 20th century and was completely radical for its time' },
+    { src: '/pics/pic3.jpg', descriptionKey: 'paintings.painting3', description: 'The main purpose of abstraction in art is not to tell a story, but to encourage involvement and imagination' },
+    { src: '/pics/pic4.jpg', descriptionKey: 'paintings.painting4', description: 'Abstract artists use a variety of techniques to create their work, mixing traditional means with more experimental idea' },
+    { src: '/pics/pic5.jpg', descriptionKey: 'paintings.painting5', description: 'Freedom of form and interpretation' },
+    { src: '/pics/pic6.jpg', descriptionKey: 'paintings.painting6', description: '' },
+    { src: '/pics/pic7.jpg', descriptionKey: 'paintings.painting7', description: '' },
+    { src: '/pics/pic8.jpg', descriptionKey: 'paintings.painting8', description: '' },
+    { src: '/pics/pic9.jpg', descriptionKey: 'paintings.painting9', description: '' },
     { src: '/pics/pic10.jpg', description: '' },
     { src: '/pics/pic11.jpg', description: '' },
     { src: '/pics/pic12.jpg', description: '' },
@@ -57,7 +61,7 @@ const Home = () => {
               alt={`Painting ${index + 1}`}
             />
             <Carousel.Caption>
-              <p>{painting.description}</p>
+              <p>{t(painting.descriptionKey)}</p>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

@@ -1,20 +1,20 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './SingleProduct.css';
-import Cart from './Cart';
-import './Cart.css';
 
 const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCart }) => {
+  const { t } = useTranslation();
   const { id } = useParams();
 
   if (!products || products.length === 0) {
-    return <div>Loading...</div>;
+    return <div>{t('singleProduct.loading')}</div>;
   }
 
   const product = products.find((product) => product.id === parseInt(id, 10));
 
   if (!product) {
-    return <div>Product not found</div>;
+    return <div>{t('singleProduct.productNotFound')}</div>;
   }
 
   const { name, price, description, size } = product;
@@ -28,17 +28,19 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
 
   return (
     <div>
-      <Cart cartItems={cart} handleCheckout={handleCheckout} removeFromCart={removeFromCart} />
+      {/* <Cart cartItems={cart} handleCheckout={handleCheckout} removeFromCart={removeFromCart} /> */}
       <div className="product-container">
         <div className="product-details">
-        <h2>{name}</h2>
-        <p>Price: {price}€ <br/> This is only the initial price from which we can negotiate, contact us personally</p>
-        <button onClick={handleAddToCart}>Add to Cart</button>
-          <p>{size}</p>
-          {descriptionLines.map((line, index) => (
+          <h2>{name}</h2>
+          <p>
+            {t('singleProduct.price')}: {price}€ <br/> {t('singleProduct.priceNote')} <br/>
+            {t('singleProduct.size')}: {size} - {descriptionLines[0]}
+          </p>
+          {/* <button onClick={handleAddToCart}>{t('singleProduct.addToCart')}</button> */}
+          {descriptionLines.slice(1).map((line, index) => (
             <p key={index}>{line}</p>
           ))}
-          <p>Acrylic, gesso-textures, mixed. Canvas 100% cotton</p>
+          <p>{t('singleProduct.material')}</p>
         </div>
         <div className="product-image">
           <img src={productImage} alt={name} />
@@ -49,4 +51,6 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
 };
 
 export default SingleProduct;
+
+
 

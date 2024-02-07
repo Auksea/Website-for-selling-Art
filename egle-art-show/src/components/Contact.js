@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import './Contact.css';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,12 +26,12 @@ const Contact = () => {
 
     try {
       const response = await fetch('http://45.93.137.251:3001/send-email', {
-      method: 'POST',
-      headers: {
-      'Content-Type': 'application/json',
-    },
-     body: JSON.stringify(formData),
-    });
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
       console.log('Server response:', response);
 
@@ -37,16 +39,16 @@ const Contact = () => {
         console.log('Email sent successfully');
         setFormData({ name: '', email: '', message: '' });
         setError('');
-        setSuccess(true); // Set success state to true
+        setSuccess(true);
       } else {
         console.error('Error sending email');
-        setError('There was an error sending your message. Please try again.');
+        setError(t('contact.error'));
         setSuccess(false);
       }
     } catch (error) {
       console.error('Error during fetch:', error);
       console.error('Error sending email:', error);
-      setError('There was an unexpected error. Please try again later.');
+      setError(t('contact.unexpectedError'));
       setSuccess(false);
     } finally {
       setLoading(false);
@@ -65,33 +67,33 @@ const Contact = () => {
       <div className="contact-form">
         <form onSubmit={handleSubmit}>
           <div>
-            <h4>CONTACT US</h4>
+            <h4>{t('contact.title')}</h4>
           </div>
           <input
             type="text"
-            placeholder="NAME"
+            placeholder={t('contact.name')}
             name="name"
             value={formData.name}
             onChange={handleChange}
           />
           <input
             type="email"
-            placeholder="EMAIL"
+            placeholder={t('contact.email')}
             name="email"
             value={formData.email}
             onChange={handleChange}
           />
           <textarea
-            placeholder="MESSAGE"
+            placeholder={t('contact.message')}
             name="message"
             value={formData.message}
             onChange={handleChange}
           ></textarea>
           <button type="submit" disabled={loading}>
-            {loading ? 'Submitting...' : 'Submit'}
+            {loading ? t('contact.submitting') : t('contact.submit')}
           </button>
           {error && <div className="error-message">{error}</div>}
-          {success && <div className="success-message">Email sent successfully!</div>}
+          {success && <div className="success-message">{t('contact.success')}</div>}
         </form>
       </div>
     </div>
@@ -99,3 +101,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

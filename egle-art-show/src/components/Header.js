@@ -1,9 +1,16 @@
 import React from 'react';
 import { Navbar, Container, Nav, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import "/node_modules/flag-icons/css/flag-icons.min.css";
+import { useTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <Navbar>
       <Container>
@@ -12,25 +19,25 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
           <Nav>
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/store" className="nav-link">Store</Link>
-            <Link to="/about" className="nav-link">About</Link>
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/" className="nav-link">{t('navbar.home')}</Link>
+            <Link to="/store" className="nav-link">{t('navbar.store')}</Link>
+            <Link to="/about" className="nav-link">{t('navbar.about')}</Link>
+            <Link to="/contact" className="nav-link">{t('navbar.contact')}</Link>
           </Nav>
           <Dropdown>
             <Dropdown.Toggle variant="light" id="dropdown-basic">
-              Language
+              {t('dropdown.language')}
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">
-                <span className="fi fi-gb"></span> English
+              <Dropdown.Item onClick={() => changeLanguage('en')}>
+                <span className="fi fi-gb"></span> {t('dropdown.english')}
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-2">
-                <span className="fi fi-fr"></span> French
+              <Dropdown.Item onClick={() => changeLanguage('fr')}>
+                <span className="fi fi-fr"></span> {t('dropdown.french')}
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-3">
-                <span className="fi fi-lt fis"></span> Lithuanian
+              <Dropdown.Item onClick={() => changeLanguage('lt')}>
+                <span className="fi fi-lt fis"></span> {t('dropdown.lithuanian')}
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -41,6 +48,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
 
 
 

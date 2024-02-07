@@ -21,7 +21,7 @@
 }
 
 .product-details p {
-  margin: 5px;
+  margin: 10px;
 }
   
   .product-image {
@@ -43,7 +43,7 @@
     border: none;
     border-radius: 5px;
     width: 40%;
-    margin: 20px auto; /* Increase margin to add more space */
+    margin: 20px auto;
   }
   
   

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Product.css';
 
 const Product = ({ product }) => {
+  const { t } = useTranslation();
+
   const { id, name, price } = product;
   const productImage = `/pics/pic${id}.jpg`;
 
@@ -13,7 +16,7 @@ const Product = ({ product }) => {
           <img src={productImage} alt={name} />
         </div>
         <h3>{name}</h3>
-        <p>Price: {price}€</p>
+        <p>{t('product.price')}: {price}€</p>
       </Link>
     </div>
   );

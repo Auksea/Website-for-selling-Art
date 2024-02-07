@@ -1,14 +1,17 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 import './Footer1.css';
 
 const Footer1 = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer-container">
       <div className="contact-info">
-        <h5>Contact Us</h5>
-        <p>Email: interest120@gmail.com</p>
+        <h5>{t('footer.contactUs')}</h5>
+        <p>{t('footer.email')}: interest120@gmail.com</p>
       </div>
       <div className="social-icons">
         <a href="https://www.facebook.com/egle.tarnapaviciute">
@@ -23,5 +26,6 @@ const Footer1 = () => {
 };
 
 export default Footer1;
+
 
 
