@@ -1,66 +1,69 @@
+.store {
+  position: relative;
+}
+
+.store-heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.store-carousel {
+  height: 250px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.store-carousel .carousel {
+  height: 250%;
+}
+
+.store-carousel .carousel-item {
+  text-align: center;
+}
+
+.store-carousel .carousel-item img {
+  max-height: 250px;
+  max-width: 100%;
+}
+
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
 
-  .heading {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    padding: 20px;
-  }
+.heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  padding: 20px;
+}
 
-  .product {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: end;
-    width: 300px; /* Set a width for each product item */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    transition: transform 0.2s ease-in-out;
-    
-  }
+.product {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: end;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
 
-  .product:hover {
-    filter: brightness(120%);
-  }
-  
-  .link {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .product-details {
-    flex-grow: 1;
-  }
+.product:hover {
+  filter: brightness(120%);
+}
 
-  .store {
-    position: relative;
-  }
-  
-  .store-heading {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .store-carousel {
-    height: 250px;
-    margin-bottom: 50px;
-  }
-  
-  .store-carousel .carousel {
-    height: 250%;
-  }
-  
-  .store-carousel .carousel-item {
-    text-align: center;
-  }
-  
-  .store-carousel .carousel-item img {
-    max-height: 250px;
-    max-width: 100%;
-  }
+.link {
+  text-decoration: none;
+  color: #333;
+}
+
+.product-details {
+  flex-grow: 1;
+}
