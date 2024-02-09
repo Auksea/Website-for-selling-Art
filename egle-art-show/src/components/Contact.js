@@ -25,13 +25,14 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('/send-email', {
+      const response = await fetch('https://art-bernadeta.ch:3001/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
       });
+  
 
       console.log('Server response:', response);
 
