@@ -1,5 +1,6 @@
-process.env.NODE_ENV = 'production';
 const express = require('express');
+const https = require('https');
+const fs = require('fs');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -7,9 +8,7 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors({
-  origin: 'https://art-bernadeta.ch'
-}));
+app.use(cors({}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -43,7 +42,14 @@ app.post('/send-email', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-const HOST = '0.0.0.0';
-app.listen(PORT, HOST, () => {
+
+// Load SSL certificate and key files
+const options = {
+  cert: fs.readFileSync('/etc/letsencrypt/live/art-bernadeta.ch-0001/fullchain.pem'),
+  key: fs.readFileSync('/etc/letsencrypt/live/art-bernadeta.ch-0001/privkey.pem')
+};
+
+// Create HTTPS server
+https.createServer(options, app).listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
