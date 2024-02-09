@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 
 app.use(cors({
-  origin: 'http://art-bernadeta.ch'
+  origin: 'https://art-bernadeta.ch'
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -43,7 +43,7 @@ app.post('/send-email', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-const HOST = '45.93.137.251';
-app.listen(PORT, () => {
+const HOST = '0.0.0.0';
+app.listen(PORT, HOST, () => {
   console.log(`Server is running on port ${PORT}`);
 });

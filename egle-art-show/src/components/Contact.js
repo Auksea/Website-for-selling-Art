@@ -25,7 +25,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://45.93.137.251:3001/send-email', {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
