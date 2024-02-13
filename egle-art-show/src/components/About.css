@@ -23,16 +23,17 @@
 
 .text-container {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
+  text-align: start;
+  width: 90%;
 }
 
 .text-container p {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
 .text-container p:last-child {
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
 }
 
@@ -43,4 +44,5 @@
   font-size: 16px;
   font-style: italic;
   border-radius: 8px;
+  margin-top: 60px;
 }
