@@ -32,10 +32,18 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
       <div className="product-container">
         <div className="product-details">
           <h2>{name}</h2>
-          <p>
-            {t('singleProduct.price')}: {price}€ <br/> {t('singleProduct.priceNote')} <br/>
+          <p className='firstParagraph'>
+            {t('singleProduct.price')}: {price}€ <br/>
+          </p>
+
+          <p className='secondParagraph'>
+            ({t('singleProduct.priceNote')})
+          </p>
+
+          <p className='firstParagraph'>
             {t('singleProduct.size')}: {size} - {descriptionLines[0]}
           </p>
+          
           {/* <button onClick={handleAddToCart}>{t('singleProduct.addToCart')}</button> */}
           {descriptionLines.slice(1).map((line, index) => (
             <p key={index}>{line}</p>

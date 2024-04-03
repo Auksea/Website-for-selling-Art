@@ -9,49 +9,55 @@ const Home = () => {
 
 
   const paintings = [
-    { src: '/pics/pic1.jpg', descriptionKey: 'paintings.painting1', description: 'ACRYLIC ABSTRACT ART' },
-    { src: '/pics/pic2.jpg', descriptionKey: 'paintings.painting2', description: 'It was born at the beginning of the 20th century and was completely radical for its time' },
-    { src: '/pics/pic3.jpg', descriptionKey: 'paintings.painting3', description: 'The main purpose of abstraction in art is not to tell a story, but to encourage involvement and imagination' },
-    { src: '/pics/pic4.jpg', descriptionKey: 'paintings.painting4', description: 'Abstract artists use a variety of techniques to create their work, mixing traditional means with more experimental idea' },
-    { src: '/pics/pic5.jpg', descriptionKey: 'paintings.painting5', description: 'Freedom of form and interpretation' },
-    { src: '/pics/pic6.jpg', descriptionKey: 'paintings.painting6', description: '' },
-    { src: '/pics/pic7.jpg', descriptionKey: 'paintings.painting7', description: '' },
-    { src: '/pics/pic8.jpg', descriptionKey: 'paintings.painting8', description: '' },
-    { src: '/pics/pic9.jpg', descriptionKey: 'paintings.painting9', description: '' },
-    { src: '/pics/pic10.jpg', description: '' },
-    { src: '/pics/pic11.jpg', description: '' },
-    { src: '/pics/pic12.jpg', description: '' },
-    { src: '/pics/pic13.jpg', description: '' },
-    { src: '/pics/pic14.jpg', description: '' },
-    { src: '/pics/pic15.jpg', description: '' },
-    { src: '/pics/pic16.jpg', description: '' },
-    { src: '/pics/pic17.jpg', description: '' },
-    { src: '/pics/pic18.jpg', description: '' },
-    { src: '/pics/pic19.jpg', description: ''},
-    { src: '/pics/pic20.jpg', description: ''},
-    { src: '/pics/pic21.jpg', description: ''},
-    { src: '/pics/pic22.jpg', description: ''},
-    { src: '/pics/pic23.jpg', description: ''},
-    { src: '/pics/pic24.jpg', description: ''},
-    { src: '/pics/pic25.jpg', description: ''},
-    { src: '/pics/pic26.jpg', description: ''},
-    { src: '/pics/pic27.jpg', description: ''},
-    { src: '/pics/pic28.jpg', description: ''},
-    { src: '/pics/pic29.jpg', description: ''},
-    { src: '/pics/pic30.jpg', description: ''},
+    { src: '/pics/pic1.jpg'},
+    { src: '/pics/pic2.jpg'},
+    { src: '/pics/pic3.jpg'},
+    { src: '/pics/pic4.jpg'},
+    { src: '/pics/pic5.jpg'},
+    { src: '/pics/pic6.jpg'},
+    { src: '/pics/pic7.jpg'},
+    { src: '/pics/pic8.jpg'},
+    { src: '/pics/pic9.jpg'},
+    { src: '/pics/pic10.jpg'},
+    { src: '/pics/pic11.jpg'},
+    { src: '/pics/pic12.jpg'},
+    { src: '/pics/pic13.jpg'},
+    { src: '/pics/pic14.jpg'},
+    { src: '/pics/pic15.jpg'},
+    { src: '/pics/pic16.jpg'},
+    { src: '/pics/pic17.jpg'},
+    { src: '/pics/pic18.jpg'},
+    { src: '/pics/pic19.jpg'},
+    { src: '/pics/pic20.jpg'},
+    { src: '/pics/pic21.jpg'},
+    { src: '/pics/pic22.jpg'},
+    { src: '/pics/pic23.jpg'},
+    { src: '/pics/pic24.jpg'},
+    { src: '/pics/pic25.jpg'},
+    { src: '/pics/pic26.jpg'},
+    { src: '/pics/pic27.jpg'},
+    { src: '/pics/pic28.jpg'},
+    { src: '/pics/pic29.jpg'},
+    { src: '/pics/pic30.jpg'},
     { },
-    { src: '/pics/pic32.jpg', description: ''},
-    { src: '/pics/pic33.jpg', description: ''},
-    { src: '/pics/pic34.jpg', description: ''},
-    { src: '/pics/pic35.jpg', description: ''},
-    { src: '/pics/pic36.jpg', description: ''},
-    { src: '/pics/pic37.jpg', description: ''},
-    // Add more painting objects as needed
-    //Change numbers and so on of places
+    { src: '/pics/pic32.jpg',},
+    { src: '/pics/pic33.jpg',},
+    { src: '/pics/pic34.jpg',},
+    { src: '/pics/pic35.jpg',},
+    { src: '/pics/pic36.jpg',},
+    { src: '/pics/pic37.jpg',},
   ];
 
   return (
-    <div>
+    <div className="home-container">
+      <div className="row">
+        <div className="text-column animated slideInLeft">
+          <p className='homeParagraph'><b>{t('home.abstract_art')}</b> {t('home.abstract_art_description')}</p>
+          <hr className='lineHome'></hr>
+        </div>
+      </div>
+      <div className="row">
+      <div className="carousel-column">
       <Carousel interval={3000} pause={false}>
         {paintings.slice(0, 5).map((painting, index) => (
           <Carousel.Item key={index}>
@@ -60,14 +66,21 @@ const Home = () => {
               src={process.env.PUBLIC_URL + painting.src}
               alt={`Painting ${index + 1}`}
             />
-            <Carousel.Caption>
-              <p>{t(painting.descriptionKey)}</p>
-            </Carousel.Caption>
+          <Carousel.Caption>
+          </Carousel.Caption>
           </Carousel.Item>
         ))}
       </Carousel>
+     </div>
+    <div className="text-column">
+      <p className='homeParagraph'>{t('home.abstract_art_forms')}</p>
+      <p className='homeParagraph'>{t('home.abstraction')}</p>
     </div>
-  );
+  </div>
+    <p className='homeParagraph'>{t('home.abstract_art_theory')}</p>
+    <p className='citationHome'>{t('home.art_voice')}</p>
+  </div>
+  ); 
 }
 
 export default Home;

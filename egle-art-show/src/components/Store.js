@@ -2,11 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Product from './Product';
-import Cart from './Cart';
-import './Cart.css';
 import products from './productsData';
 import './Store.css';
-import StoreCarousel from './StoreCarousel';
 
 const Store = ({ addToCart, cart, handleCheckout, removeFromCart }) => {
   const { t } = useTranslation();
@@ -15,9 +12,9 @@ const Store = ({ addToCart, cart, handleCheckout, removeFromCart }) => {
     <div>
       {/*<Cart cartItems={cart} handleCheckout={handleCheckout} removeFromCart={removeFromCart} />*/}
       <div className="store">
-        <h1 className='heading'>{t('store.title')}</h1>
+        <h1 className='headingStore'>{t('store.title')}</h1>
+        <img src={'/pics/art-gallery.jpg'} alt="Store" className="store-image" />
         <div className="store-carousel">
-        <StoreCarousel />
         </div>
         <div className="products">
           {products.map((product) => (

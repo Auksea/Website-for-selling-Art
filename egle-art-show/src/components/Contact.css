@@ -1,19 +1,28 @@
+.contact-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .contact-form {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 35px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.855);
   border-radius: 10px;
   box-shadow: 10px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  width: 600px;
+  margin-bottom: 80px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  display: none;
+.contact-form h4 {
+  margin-bottom: 20px;
 }
 
 .contact-form form {
@@ -44,10 +53,24 @@
   background-color: #85809a;
 }
 
-.carousel-item img {
-  object-fit: cover;
-  height: 800px;
+.contact-form .error-message,
+.contact-form .success-message {
+  margin-top: 80px;
+  color: red;
 }
+
+.google-maps {
+  width: 100%;
+  height: 350px;
+}
+
+
+
+
+
+
+
+
 
 
 
