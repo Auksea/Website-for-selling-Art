@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import './Contact.css';
 

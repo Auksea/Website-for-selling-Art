@@ -22,6 +22,17 @@ const products = [
     { id: 34, name: 'Planetos sukūrimas', price: 120, description: '1 - 60*40*1.5 cm/2 - 40*30*1.5 cm' },
     { id: 35, name: 'Hope', price: 120, description: '32*41*1.5cm' },
     { id: 36, name: 'Tree', price: 120, description: '24*30*1.5cm' },
+    { id: 37, name: '', price: 120, description: '' },
+    { id: 38, name: '', price: 120, description: '' },
+    { id: 39, name: '', price: 120, description: '' },
+    { id: 40, name: '', price: 120, description: '' },
+    { id: 41, name: '', price: 120, description: '' },
+    { id: 42, name: '', price: 120, description: '' },
+    { id: 43, name: '', price: 120, description: '' },
+    { id: 44, name: '', price: 120, description: '' },
+    { id: 45, name: '', price: 120, description: '' },
+    { id: 46, name: '', price: 120, description: '' },
+    { id: 47, name: '', price: 120, description: '' },
   ];
   
   export default products;
