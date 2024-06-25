@@ -1,23 +1,29 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 
 const Home = () => {
   const { t } = useTranslation();
 
-
   const paintings = [
-    { src: '/pics/pic4.jpg'},
-    { src: '/pics/pic5.jpg'},
-    { src: '/pics/pic7.jpg'},
-    { src: '/pics/pic9.jpg'},
-    { src: '/pics/pic10.jpg'},
+    { src: '/pics/pic4.webp' },
+    { src: '/pics/pic5.webp' },
+    { src: '/pics/pic7.webp' },
+    { src: '/pics/pic9.webp' },
+    { src: '/pics/pic10.webp' },
   ];
 
   return (
     <div className="home-container">
+      <Helmet>
+      <title>{t('gallery.home.title')}</title>
+        <meta name="description" content={t('gallery.home.description')} />
+        <meta name="keywords" content={t('gallery.home.keywords')} />
+        <link rel="canonical" href={window.location.href} />
+      </Helmet>
       <div className="row">
         <div className="text-column animated slideInLeft">
           <p className='homeParagraph'><b>{t('home.abstract_art')}</b> {t('home.abstract_art_description')}</p>
@@ -46,7 +52,7 @@ const Home = () => {
       <p className='homeParagraph'>{t('home.abstract_art_theory')}</p>
       <p className='citationHome'>{t('home.art_voice')}</p>
     </div>
-  ); 
+  );
 }
 
 export default Home;

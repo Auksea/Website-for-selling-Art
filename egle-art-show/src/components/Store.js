@@ -10,7 +10,6 @@ const Store = ({ addToCart, cart, handleCheckout, removeFromCart }) => {
 
   return (
     <div>
-      {/*<Cart cartItems={cart} handleCheckout={handleCheckout} removeFromCart={removeFromCart} />*/}
       <div className="store">
         <h1 className='headingStore'>{t('store.title')}</h1>
         <img src={'/pics/art-gallery.jpg'} alt="Store" className="store-image" />

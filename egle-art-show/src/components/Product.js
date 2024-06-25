@@ -7,7 +7,7 @@ const Product = ({ product }) => {
   const { t } = useTranslation();
 
   const { id, name, price } = product;
-  const productImage = `/pics/pic${id}.jpg`;
+  const productImage = `/pics/pic${id}.webp`;
 
   return (
     <div className="product">

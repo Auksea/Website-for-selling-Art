@@ -18,7 +18,7 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
   }
 
   const { name, price, description, size } = product;
-  const productImage = `/pics/pic${id}.jpg`;
+  const productImage = `/pics/pic${id}.webp`;
 
   const handleAddToCart = () => {
     addToCart(product);
@@ -28,7 +28,6 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
 
   return (
     <div>
-      {/* <Cart cartItems={cart} handleCheckout={handleCheckout} removeFromCart={removeFromCart} /> */}
       <div className="product-container">
         <div className="product-details">
           <h2>{name}</h2>
@@ -44,7 +43,6 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
             {t('singleProduct.size')}: {size} - {descriptionLines[0]}
           </p>
           
-          {/* <button onClick={handleAddToCart}>{t('singleProduct.addToCart')}</button> */}
           {descriptionLines.slice(1).map((line, index) => (
             <p key={index}>{line}</p>
           ))}

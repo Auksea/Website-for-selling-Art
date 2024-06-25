@@ -70,12 +70,18 @@
     "product": {
       "price": "Prix"
     },
-"home.welcome": "Bienvenue",
-"home.abstract_art": "Art abstrait",
-"home.abstract_art_description": "est un genre diversifié et expansif qui englobe un large éventail d'expressions artistiques et de styles. Émergeant au début du 20e siècle comme un départ radical de l'art représentationnel, l'art abstrait cherche à transmettre des idées, des émotions et des sensations à travers des formes non représentationnelles et des éléments visuels.",
-"home.abstract_art_forms": "Il peut prendre de nombreuses formes, y compris l'abstraction géométrique, où les formes sont distillées dans leur essence la plus pure; l'abstraction gestuelle, qui met l'accent sur le coup de pinceau spontané et expressif et la création de marques; et la peinture de champ de couleur, qui explore l'impact émotionnel et psychologique de la couleur et de la forme sur le spectateur. L'art abstrait, en tant que théorie, est enraciné dans l'idée de libération des contraintes des formes représentationnelles et des conventions artistiques traditionnelles.",
-"home.abstraction": "Un des principes clés de l'art abstrait est l'abstraction, le processus de simplification ou de réduction des éléments visuels à leurs caractéristiques essentielles. Cela peut impliquer de décomposer des objets ou des scènes en formes géométriques, d'expérimenter avec des formes non représentationnelles, ou d'explorer l'interaction de la couleur et de la texture de manière purement expressive.",
-"home.abstract_art_theory": "Dans l'ensemble, la théorie de l'art abstrait célèbre le pouvoir transformateur de la créativité, encourageant les artistes et les spectateurs à embrasser l'ambiguïté.",
-"home.art_voice": "“L'art a une voix - laissez-la parler.” ― Rochelle Carr"
-
+      "home.welcome": "Bienvenue",
+      "home.abstract_art": "Art abstrait",
+      "home.abstract_art_description": "est un genre diversifié et expansif qui englobe un large éventail d'expressions artistiques et de styles. Émergeant au début du 20e siècle comme un départ radical de l'art représentationnel, l'art abstrait cherche à transmettre des idées, des émotions et des sensations à travers des formes non représentationnelles et des éléments visuels.",
+      "home.abstract_art_forms": "Il peut prendre de nombreuses formes, y compris l'abstraction géométrique, où les formes sont distillées dans leur essence la plus pure; l'abstraction gestuelle, qui met l'accent sur le coup de pinceau spontané et expressif et la création de marques; et la peinture de champ de couleur, qui explore l'impact émotionnel et psychologique de la couleur et de la forme sur le spectateur. L'art abstrait, en tant que théorie, est enraciné dans l'idée de libération des contraintes des formes représentationnelles et des conventions artistiques traditionnelles.",
+      "home.abstraction": "Un des principes clés de l'art abstrait est l'abstraction, le processus de simplification ou de réduction des éléments visuels à leurs caractéristiques essentielles. Cela peut impliquer de décomposer des objets ou des scènes en formes géométriques, d'expérimenter avec des formes non représentationnelles, ou d'explorer l'interaction de la couleur et de la texture de manière purement expressive.",
+      "home.abstract_art_theory": "Dans l'ensemble, la théorie de l'art abstrait célèbre le pouvoir transformateur de la créativité, encourageant les artistes et les spectateurs à embrasser l'ambiguïté.",
+      "home.art_voice": "“L'art a une voix - laissez-la parler.” ― Rochelle Carr",
+      "gallery": {
+        "home": {
+          "title": "Galerie d'Art Abstrait | Acheter des Peintures Acryliques",
+          "description": "Découvrez notre collection de peintures acryliques abstraites. Des pièces d'art uniques et originales pour la décoration de votre maison ou bureau.",
+          "keywords": "art abstrait, peintures acryliques, art à vendre, art moderne, pièces d'art uniques"
+        }
+      }    
 }

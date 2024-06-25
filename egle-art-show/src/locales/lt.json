@@ -70,11 +70,18 @@
   "product": {
     "price": "Kaina"
   },
-"home.welcome": "Sveiki atvykę",
-"home.abstract_art": "Abstraktus menas",
-"home.abstract_art_description": "yra įvairus ir plačios išraiškos ir stiliaus žanras. Pasirodęs XX a. pradžioje kaip radikalus išsiskyrimas iš vaizduojamojo meno, abstraktus menas siekia perduoti idėjas, emocijas ir pojūčius per nestandartines formas ir vaizdinius elementus.",
-"home.abstract_art_forms": "Tai gali būti įvairių formų, įskaitant geometrinę abstrakciją, kur formos yra supaprastintos iki jų grynųjų esmės; gestinę abstrakciją, kuriai būdingas spontaniškas, išraiškingas šepetėlių darbas ir ženklų kūrimas; ir spalvų lauko tapyba, kuri tyrinėja spalvos ir formos emocinį ir psichologinį poveikį žiūrovui. Abstraktus menas, kaip teorija, įkūnytas idėjos apie išsilaisvinimą iš vaizduojamų formų ir tradicinių meninių konvencijų apribojimų.",
-"home.abstraction": "Vienas iš pagrindinių abstraktaus meno principų yra abstrakcija, procesas, kai vizualiniai elementai supaprastinami ar sumažinami iki jų esminių charakteristikų. Tai gali apimti objektų ar scenų skaidymą į geometrines formas, eksperimentavimą su nestandartinėmis formomis ar spalvų ir tekstūros sąveikos tyrinėjimą visiškai išraiškingais būdais.",
-"home.abstract_art_theory": "Apibendrinant, abstraktus menas įkūnija kūrybiškumo transformacinę galią, skatinant menininkus ir žiūrovus imtis abejonės.",
-"home.art_voice": "“Menas turi balsą - leiskite jam kalbėti.” ― Rochelle Carr"
+  "home.welcome": "Sveiki atvykę",
+  "home.abstract_art": "Abstraktus menas",
+  "home.abstract_art_description": "yra įvairus ir plačios išraiškos ir stiliaus žanras. Pasirodęs XX a. pradžioje kaip radikalus išsiskyrimas iš vaizduojamojo meno, abstraktus menas siekia perduoti idėjas, emocijas ir pojūčius per nestandartines formas ir vaizdinius elementus.",
+  "home.abstract_art_forms": "Tai gali būti įvairių formų, įskaitant geometrinę abstrakciją, kur formos yra supaprastintos iki jų grynųjų esmės; gestinę abstrakciją, kuriai būdingas spontaniškas, išraiškingas šepetėlių darbas ir ženklų kūrimas; ir spalvų lauko tapyba, kuri tyrinėja spalvos ir formos emocinį ir psichologinį poveikį žiūrovui. Abstraktus menas, kaip teorija, įkūnytas idėjos apie išsilaisvinimą iš vaizduojamų formų ir tradicinių meninių konvencijų apribojimų.",
+  "home.abstraction": "Vienas iš pagrindinių abstraktaus meno principų yra abstrakcija, procesas, kai vizualiniai elementai supaprastinami ar sumažinami iki jų esminių charakteristikų. Tai gali apimti objektų ar scenų skaidymą į geometrines formas, eksperimentavimą su nestandartinėmis formomis ar spalvų ir tekstūros sąveikos tyrinėjimą visiškai išraiškingais būdais.",
+  "home.abstract_art_theory": "Apibendrinant, abstraktus menas įkūnija kūrybiškumo transformacinę galią, skatinant menininkus ir žiūrovus imtis abejonės.",
+  "home.art_voice": "“Menas turi balsą - leiskite jam kalbėti.” ― Rochelle Carr",
+  "gallery": {
+    "home": {
+      "title": "Abstrakčiojo meno galerija | Pirkti akrilinius paveikslus",
+      "description": "Atraskite mūsų kolekciją abstrakčių akrilinių paveikslų. Unikalūs ir originalūs meno kūriniai jūsų namų ar biuro dekoravimui.",
+      "keywords": "abstraktus menas, akriliniai paveikslai, menas pardavimui, modernus menas, unikalūs meno kūriniai"
+    }
+  }
 }
