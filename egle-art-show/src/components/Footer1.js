@@ -9,8 +9,8 @@ const Footer1 = () => {
 
   return (
     <footer className="footer-container">
+      <h5>{t('footer.contactUs')}</h5>
       <div className="contact-info">
-        <h5>{t('footer.contactUs')}</h5>
         <p>{t('footer.email')}: interest120@gmail.com</p>
       </div>
       <div className="social-icons">

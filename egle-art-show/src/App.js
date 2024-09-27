@@ -6,7 +6,6 @@ import NavBar from './components/Header';
 import Footer from './components/Footer1';
 import Home from './components/Home';
 import Store from './components/Store';
-import About from './components/About';
 import Contact from './components/Contact';
 import SingleProduct from './components/SingleProduct';
 import products from './components/productsData';
@@ -37,10 +36,6 @@ function App() {
             <Route
               path="/store"
               element={<Store products={products} addToCart={addToCart} cart={cart} setCart={setCart} removeFromCart={removeFromCart} />}
-            />
-            <Route
-              path="/about"
-              element={<About />}
             />
             <Route
               path="/product/:id"

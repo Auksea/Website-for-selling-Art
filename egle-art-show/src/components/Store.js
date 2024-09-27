@@ -12,8 +12,7 @@ const Store = ({ addToCart, cart, handleCheckout, removeFromCart }) => {
     <div>
       <div className="store">
         <h1 className='headingStore'>{t('store.title')}</h1>
-        <img src={'/pics/art-gallery.jpg'} alt="Store" className="store-image" />
-        <div className="store-carousel">
+        <hr className="decorative-line-store" />
         </div>
         <div className="products">
           {products.map((product) => (
@@ -23,9 +22,7 @@ const Store = ({ addToCart, cart, handleCheckout, removeFromCart }) => {
           ))}
         </div>
       </div>
-    </div>
   );
 };
 
 export default Store;
-

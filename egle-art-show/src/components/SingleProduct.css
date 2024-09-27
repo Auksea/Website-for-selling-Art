@@ -1,26 +1,27 @@
 .product-container {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
-  align-items: flex-start;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 50px;
   margin-top: 100px;
+  background-color: #f8f8f8;
+  transition: transform .2s ease-in-out;
 }
 
 .product-details {
+  font-family: 'Times New Roman', Times, serif;
   flex: 1;
   display: flex;
   flex-direction: column;
   text-align: start;
+  padding: 20px;
 }
 
 .product-details h2 {
-  margin-bottom: 100px;
-  text-align: start;
-  font-style: italic;
+  font-family: 'Lucida Handwriting', serif;
+  margin-bottom: 40px;
   font-size: 50px;
-
 }
 
 .firstParagraph {
@@ -31,57 +32,46 @@
 .secondParagraph {
   font-size: 16px;
 }
-  
+
 .product-image {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
 .product-image img {
   max-width: 100%;
   max-height: 100%;
+  border: 2px solid #deb887;
 }
 
-.product-details button {
-  background-color: #080808;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  padding: 10px 20px;
+.decorative-line-productDetails {
+  width: 90%;
+  height: 2px;
+  background-color: #976940;
   border: none;
-  border-radius: 5px;
-  width: 40%;
-  margin: 20px auto;
-}
-
-.product-details button:hover {
-  background-color: #85809a;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 800px) {
   .product-container {
     flex-direction: column;
-    align-items: center;
     padding: 20px;
   }
 
   .product-details {
     order: 2;
-    text-align: start;
+    text-align: center;
     margin-top: 30px;
   }
 
   .product-image {
     order: 1;
+    margin-bottom: 20px;
   }
 
   .product-details h2 {
-    margin-bottom: 50px;
     font-size: 40px;
-  }
-
-  .product-details button {
-    width: 80%;
-    margin: 20px auto;
   }
 }

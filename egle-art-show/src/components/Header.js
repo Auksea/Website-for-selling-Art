@@ -7,94 +7,54 @@ import './Header.css';
 
 const Header = () => {
   const { t } = useTranslation();
-  const location = useLocation();
-  const [showCurtainMenu, setShowCurtainMenu] = useState(false);
-
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
-  const renderHeading = () => {
-    switch (location.pathname) {
-      case '/':
-        return t('Home');
-      case '/store':
-        return t('Store');
-      case '/about':
-        return t('About Author');
-      case '/contact':
-        return t('Contacts');
-      default:
-        return '';
-    }
-  };
-
   return (
     <div className="header-wrapper">
-      <div className="header-heading">{renderHeading()}</div>
-      {showCurtainMenu && (
-        <div className="curtain-menu-header">
-          <button className="close-btn" onClick={() => setShowCurtainMenu(false)}>&times;</button>
-          <Link to="/" className="curtain-nav-link" onClick={() => setShowCurtainMenu(false)}>{t('navbar.home')}</Link>
-          <Link to="/store" className="curtain-nav-link" onClick={() => setShowCurtainMenu(false)}>{t('navbar.store')}</Link>
-          <Link to="/about" className="curtain-nav-link" onClick={() => setShowCurtainMenu(false)}>{t('navbar.about')}</Link>
-          <Link to="/contact" className="curtain-nav-link" onClick={() => setShowCurtainMenu(false)}>{t('navbar.contact')}</Link>
-          
+      <div className="top-line-wrapper">
+        
+        {/* Header Name in the Center */}
+        <div className="header-name">art-bernadeta.ch</div>
+
+        {/* Language Dropdown for Desktop at the Right */}
+        <div className="desktop-language-dropdown">
           <Dropdown>
             <Dropdown.Toggle variant="light" id="dropdown-basic">
               {t('dropdown.language')}
             </Dropdown.Toggle>
-  
             <Dropdown.Menu>
-              <Dropdown.Item onClick={() => { changeLanguage('en'); setShowCurtainMenu(false); }}>
+              <Dropdown.Item onClick={() => changeLanguage('en')}>
                 <span className="fi fi-gb"></span> {t('dropdown.english')}
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => { changeLanguage('fr'); setShowCurtainMenu(false); }}>
+              <Dropdown.Item onClick={() => changeLanguage('fr')}>
                 <span className="fi fi-fr"></span> {t('dropdown.french')}
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => { changeLanguage('lt'); setShowCurtainMenu(false); }}>
-                <span className="fi fi-lt fis"></span> {t('dropdown.lithuanian')}
+              <Dropdown.Item onClick={() => changeLanguage('lt')}>
+                <span className="fi fi-lt"></span> {t('dropdown.lithuanian')}
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
-      )}
+      </div>
+
+      <div className="top-line"></div>
+
       <Container>
-        {!showCurtainMenu && (
-          <Navbar expand="sm" variant="light" className="custom-navbar">
-            <Navbar.Toggle onClick={() => setShowCurtainMenu(!showCurtainMenu)} />
-            <Navbar.Collapse className="justify-content-between">
-              <Nav className="mr-auto">
-                <Link to="/" className="nav-link" onClick={() => setShowCurtainMenu(false)}>{t('navbar.home')}</Link>
-                <Link to="/store" className="nav-link" onClick={() => setShowCurtainMenu(false)}>{t('navbar.store')}</Link>
-                <Link to="/about" className="nav-link" onClick={() => setShowCurtainMenu(false)}>{t('navbar.about')}</Link>
-                <Link to="/contact" className="nav-link" onClick={() => setShowCurtainMenu(false)}>{t('navbar.contact')}</Link>
-              </Nav>
-              <Nav>
-                <Dropdown>
-                  <Dropdown.Toggle variant="light" id="dropdown-basic">
-                    {t('dropdown.language')}
-                  </Dropdown.Toggle>
-  
-                  <Dropdown.Menu>
-                    <Dropdown.Item onClick={() => { changeLanguage('en'); setShowCurtainMenu(false); }}>
-                      <span className="fi fi-gb"></span> {t('dropdown.english')}
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => { changeLanguage('fr'); setShowCurtainMenu(false); }}>
-                      <span className="fi fi-fr"></span> {t('dropdown.french')}
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => { changeLanguage('lt'); setShowCurtainMenu(false); }}>
-                      <span className="fi fi-lt fis"></span> {t('dropdown.lithuanian')}
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-        )}
+        <Navbar expand="sm" variant="light" className="custom-navbar">
+          <Navbar.Toggle />
+          <Navbar.Collapse className="vertical-navbar">
+            <Nav className="mr-auto">
+              <Link to="/" className="nav-link">{t('navbar.home')}</Link>
+              <Link to="/store" className="nav-link">{t('navbar.store')}</Link>
+              <Link to="/contact" className="nav-link">{t('navbar.contact')}</Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
       </Container>
     </div>
-  );  
+  );
 };
 
 export default Header;

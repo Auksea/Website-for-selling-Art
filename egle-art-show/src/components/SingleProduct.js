@@ -17,12 +17,8 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
     return <div>{t('singleProduct.productNotFound')}</div>;
   }
 
-  const { name, price, description, size } = product;
+  const { name, price, description } = product;
   const productImage = `/pics/pic${id}.webp`;
-
-  const handleAddToCart = () => {
-    addToCart(product);
-  };
 
   const descriptionLines = description.split('\n');
 
@@ -31,6 +27,7 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
       <div className="product-container">
         <div className="product-details">
           <h2>{name}</h2>
+          <hr className="decorative-line-productDetails" />
           <p className='firstParagraph'>
             {t('singleProduct.price')}: {price}€ <br/>
           </p>
@@ -38,12 +35,8 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
           <p className='secondParagraph'>
             ({t('singleProduct.priceNote')})
           </p>
-
-          <p className='firstParagraph'>
-            {t('singleProduct.size')}: {size} - {descriptionLines[0]}
-          </p>
           
-          {descriptionLines.slice(1).map((line, index) => (
+          {descriptionLines.map((line, index) => (
             <p key={index}>{line}</p>
           ))}
           <p>{t('singleProduct.material')}</p>
@@ -55,6 +48,7 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
     </div>
   );
 };
+
 
 export default SingleProduct;
 

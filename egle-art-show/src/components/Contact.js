@@ -59,6 +59,7 @@ const Contact = () => {
       <div className="row">
         <div className="contact-form">
           <h4>{t('contact.title')}</h4>
+          <hr className="decorative-line" />
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -86,19 +87,6 @@ const Contact = () => {
             {error && <div className="error-message">{error}</div>}
             {success && <div className="success-message">{t('contact.success')}</div>}
           </form>
-        </div>
-      </div>
-      <div className="row">
-        <div className="google-maps">
-          <iframe
-            title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54742.30162992537!2d6.61148313559679!3d46.54310131578654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c293ecd89a7e5%3A0xeb173fc9cae2ee5e!2sLausanne%2C%20Switzerland!5e0!3m2!1sen!2sdk!4v1712048957957!5m2!1sen!2sdk"
-            width="100%"
-            height="350"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
         </div>
       </div>
     </div>

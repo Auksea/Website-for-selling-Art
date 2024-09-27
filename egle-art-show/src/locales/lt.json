@@ -13,24 +13,17 @@
   "dropdown.lithuanian": "Lietuvių",
   "product.price": "Kaina",
   "product.addToCart": "Pridėti į krepšelį",
-  "footer.contactUs": "Susisiekite su mumis",
+  "footer.contactUs": "Susisiekite",
   "footer.email": "El.paštas",
   "paintings.painting1": "AKRILINIS ABSTRAKTUS MENAS",
   "paintings.painting2": "Jis gimė XX amžiaus pradžioje ir buvo visiškai radikalus savo laikais",
   "paintings.painting3": "Pagrindinis abstrakcijos meno tikslas nėra pasakoti istoriją, o skatinti įsitraukimą ir vaizduotę",
   "paintings.painting4": "Abstrakčiai menininkai naudoja įvairias technikas savo darbui kurti, maišydami tradicines priemones su eksperimentinėmis idėjomis",
   "paintings.painting5": "Formos ir interpretacijos laisvė",
-  "about.title": "Apie Mane",
-  "about.intro": "Mano vardas Eglė. Esu labai jautri, miela moteris.",
-  "about.paragraph1": "Visada mėgau meną. Man pasisekė gyventi Italijoje, šalyje, pilnoje meno, bet neturėjau supratimo, kad galėčiau sukurti ką nors. Visada įsivaizdavau save labai loginiu, racionaliu žmogumi. Iš tikrųjų 'ne menams' skirtą.",
-  "about.paragraph2": "Ir netikėtai 2022 m., dėl nepakeliamo skausmo po mylimo žmogaus praradimo, ieškant kelių išeiti iš depresijos - kelias atvedė į menų terapijos pamokas.",
-  "about.paragraph3": "Kai mano namai prisipildė paveikslų, atsirado noras dalintis savo darbu su visu pasauliu.",
-  "about.citation": "Dailė yra poezija, kurią galima pamatyti, o poezija - dailė, kurią galima jausti.",
-  "about.citationAuthor": "Leonardo da Vinci",
   "singleProduct.loading": "Kraunama...",
   "singleProduct.productNotFound": "Prekė nerasta",
   "singleProduct.price": "Kaina",
-  "singleProduct.priceNote": "Tai tik pradinė kaina nuo kurios galime derėtis. Susisiekite su mumis asmeniškai",
+  "singleProduct.priceNote": "Tai tik pradinė kaina nuo kurios galime derėtis. Susisiekite su manimi asmeniškai",
   "singleProduct.size": "Dydis",
   "singleProduct.addToCart": "Pridėti į krepšelį",
   "singleProduct.material": "Akrilas, gesso tekstūros, mišrus. Drobė 100% medvilnė",
@@ -54,10 +47,10 @@
     "36": { "description": "Dydis: 24*30*1.5cm" }
   },
   "store": {
-    "title": "Sveiki atvykę į Parduotuvę"
+    "title": "Parduotuvė"
   },
   "contact": {
-    "title": "Susisiekite su mumis",
+    "title": "Susisiekite",
     "name": "VARDAS",
     "email": "ELEKTRONINIS PAŠTAS",
     "message": "ŽINUTĖ",
@@ -70,13 +63,12 @@
   "product": {
     "price": "Kaina"
   },
-  "home.welcome": "Sveiki atvykę",
+  "home.welcome": "Sveiki",
   "home.abstract_art": "Abstraktus menas",
-  "home.abstract_art_description": "yra įvairus ir plačios išraiškos ir stiliaus žanras. Pasirodęs XX a. pradžioje kaip radikalus išsiskyrimas iš vaizduojamojo meno, abstraktus menas siekia perduoti idėjas, emocijas ir pojūčius per nestandartines formas ir vaizdinius elementus.",
-  "home.abstract_art_forms": "Tai gali būti įvairių formų, įskaitant geometrinę abstrakciją, kur formos yra supaprastintos iki jų grynųjų esmės; gestinę abstrakciją, kuriai būdingas spontaniškas, išraiškingas šepetėlių darbas ir ženklų kūrimas; ir spalvų lauko tapyba, kuri tyrinėja spalvos ir formos emocinį ir psichologinį poveikį žiūrovui. Abstraktus menas, kaip teorija, įkūnytas idėjos apie išsilaisvinimą iš vaizduojamų formų ir tradicinių meninių konvencijų apribojimų.",
-  "home.abstraction": "Vienas iš pagrindinių abstraktaus meno principų yra abstrakcija, procesas, kai vizualiniai elementai supaprastinami ar sumažinami iki jų esminių charakteristikų. Tai gali apimti objektų ar scenų skaidymą į geometrines formas, eksperimentavimą su nestandartinėmis formomis ar spalvų ir tekstūros sąveikos tyrinėjimą visiškai išraiškingais būdais.",
-  "home.abstract_art_theory": "Apibendrinant, abstraktus menas įkūnija kūrybiškumo transformacinę galią, skatinant menininkus ir žiūrovus imtis abejonės.",
-  "home.art_voice": "“Menas turi balsą - leiskite jam kalbėti.” ― Rochelle Carr",
+  "home.abstract_art_description": "Abstraktus menas yra platus žanras, kuris atsirado XX amžiaus pradžioje, nutolstant nuo tradicinių formų ir siekiant išreikšti emocijas bei idėjas per nevaizdinius formas, spalvas ir tekstūras. Jis apima tokius stilius kaip geometrinė abstrakcija, gestų tapyba ir spalvų lauko menas, visi orientuoti į formų supaprastinimą ir spalvos bei dizaino emocinio poveikio tyrimą.",
+  "home.about_me": "Apie mane",
+  "home.about_me_description": "Aš esu Eglė, jautri ir kūrybinga moteris. Nors anksčiau maniau, kad nesu tinkama menui, 2022 m., po gilaus asmeninio netekimo, nusprendžiau pasinerti į meno terapiją. Tai pakeitė mano gyvenimą, užpildydama mano namus paveikslais ir įkvėpdama mane dalytis savo darbu su pasauliu.",
+  "home.art_voice": "„Menas turi balsą - leiskite jam kalbėti.“ ― Rochelle Carr",
   "gallery": {
     "home": {
       "title": "Abstrakčiojo meno galerija | Pirkti akrilinius paveikslus",
