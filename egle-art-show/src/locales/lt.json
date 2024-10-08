@@ -20,31 +20,149 @@
   "paintings.painting3": "Pagrindinis abstrakcijos meno tikslas nėra pasakoti istoriją, o skatinti įsitraukimą ir vaizduotę",
   "paintings.painting4": "Abstrakčiai menininkai naudoja įvairias technikas savo darbui kurti, maišydami tradicines priemones su eksperimentinėmis idėjomis",
   "paintings.painting5": "Formos ir interpretacijos laisvė",
-  "singleProduct.loading": "Kraunama...",
-  "singleProduct.productNotFound": "Prekė nerasta",
-  "singleProduct.price": "Kaina",
-  "singleProduct.priceNote": "Tai tik pradinė kaina nuo kurios galime derėtis. Susisiekite su manimi asmeniškai",
-  "singleProduct.size": "Dydis",
-  "singleProduct.addToCart": "Pridėti į krepšelį",
-  "singleProduct.material": "Akrilas, gesso tekstūros, mišrus. Drobė 100% medvilnė",
-  "products": {
-    "19": { "description": "Dydis: 30*30*1.5cm" },
-    "20": { "description": "Dydis: 30*40*1.5cm" },
-    "21": { "description": "Dydis kaip vienas - 50*40*1.5cm / atskiras 20*50*1.5 cm" },
-    "22": { "description": "Dydis: 50*40cm" },
-    "23": { "description": "Mąstymų miškas.. Mąstymų miškas..\n„Tu esi tai, ką galvoji. Tavo emocijos vergauja tavo mintims, o tu esi vergas savo emocijoms.“ (ELIZABETH GILBERT)" },
-    "24": { "description": "Dydis: 50*70*1.5cm" },
-    "25": { "description": "Dydis: 40*30*1.5cm" },
-    "26": { "description": "Dydis: 30*24*1.5cm" },
-    "27": { "description": "Dydis: 50*60cm" },
-    "28": { "description": "Dydis: 40*40*1.5cm" },
-    "29": { "description": "Dydis: 50*60*1.5cm" },
-    "30": { "description": "Aprašymas apie paveikslą" },
-    "32": { "description": "Dydis: 50*40cm" },
-    "33": { "description": "Dydis: 50*70*1.5cm" },
-    "34": { "description": "Dydis kaip vienas - 60*40*1.5 cm / atskiras 40*30*1.5 cm" },
-    "35": { "description": "Dydis: 32*41*1.5cm" },
-    "36": { "description": "Dydis: 24*30*1.5cm" }
+  "singleProduct": {
+    "loading": "Įkeliama...",
+    "productNotFound": "Produktas nerastas",
+    "price": "Kaina",
+    "priceNote": "Tai tik pradinė kaina, nuo kurios galime derėtis, susisiekite su manimi asmeniškai",
+    "material": "Akrilas, gesso tekstūros, mišri technika. Drobė 100% medvilnė",
+    "products": {
+    "19": {
+      "name": "Taškas",
+      "description": "Dydis: 30*30*1.5cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "20": {
+      "name": "Labai šalta",
+      "description": "Dydis: 30*40*1.5cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "21": {
+      "name": "Sėkmė",
+      "description": "Vienoje dalyje dydis: 50*40*1.5cm / atskirai: 20*50*1.5cm",
+      "materials": "Gesso tekstūros, mišri technika ant drobės"
+    },
+    "22": {
+      "name": "Sielos integracija",
+      "description": "Dydis: 50*40cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "23": {
+      "name": "Mintys",
+      "description": "Dydis: 30*24*1.5cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "24": {
+      "name": "Indijos vasara",
+      "description": "Dydis: 50*70*1.5cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "25": {
+      "name": "Begalybės pradžia",
+      "description": "Dydis: 40*30*1.5cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "26": {
+      "name": "Fėjų šokis",
+      "description": "Dydis: 30*24*1.5cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "27": {
+      "name": "Apačioje",
+      "description": "Dydis: 50*60cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "28": {
+      "name": "Tikslas",
+      "description": "Dydis: 40*40*1.5cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "29": {
+      "name": "Viršuje",
+      "description": "Dydis: 50*60*1.5cm",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "30": {
+      "name": "Iš tolo",
+      "description": "Paveikslo aprašymas",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "32": {
+      "name": "Vizija",
+      "description": "Dydis: 50*40cm",
+      "materials": "Akrilas ant drobės"
+    },
+    "33": {
+      "name": "Vandenynas",
+      "description": "Dydis: 50*70cm",
+      "materials": "Akrilas ant drobės"
+    },
+    "34": {
+      "name": "Planetos kūrimas",
+      "description": "Dydis: 30*40cm - + 30*40cm",
+      "materials": "Akrilas ant drobės"
+    },
+    "35": {
+      "name": "Viltis",
+      "description": "Dydis: 32*41cm",
+      "materials": "Akrilas ant drobės"
+    },
+    "36": {
+      "name": "Medis",
+      "description": "Dydis: 24*30cm",
+      "materials": "Akrilas ant drobės"
+    },
+    "37": {
+      "name": "Gimimas",
+      "description": "Dydis: 50*60cm",
+      "materials": "Akrilas ant drobės"
+    },
+    "39": {
+      "name": "Iš kito pasaulio",
+      "description": "Dydis: 24*30cm ir 24*30cm",
+      "materials": "Akrilas ant drobės"
+    },
+    "40": {
+      "name": "Be pavadinimo 4",
+      "description": "Nėra aprašymo",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "41": {
+      "name": "Be pavadinimo 5",
+      "description": "Nėra aprašymo",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "42": {
+      "name": "Be pavadinimo 6",
+      "description": "Nėra aprašymo",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "43": {
+      "name": "Be pavadinimo 7",
+      "description": "Nėra aprašymo",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "44": {
+      "name": "Be pavadinimo 8",
+      "description": "Nėra aprašymo",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "45": {
+      "name": "Be pavadinimo 9",
+      "description": "Nėra aprašymo",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "46": {
+      "name": "Be pavadinimo 10",
+      "description": "Nėra aprašymo",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    },
+    "47": {
+      "name": "Be pavadinimo 11",
+      "description": "Nėra aprašymo",
+      "materials": "Akrilas, gesso tekstūros, mišri. Ant drobės"
+    }
+  }
   },
   "store": {
     "title": "Parduotuvė"

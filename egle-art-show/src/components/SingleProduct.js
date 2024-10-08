@@ -17,7 +17,10 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
     return <div>{t('singleProduct.productNotFound')}</div>;
   }
 
-  const { name, price, description } = product;
+  const name = t(`singleProduct.products.${id}.name`);
+  const description = t(`singleProduct.products.${id}.description`);
+  const materials = t(`singleProduct.products.${id}.materials`);
+  const { price } = product;
   const productImage = `/pics/pic${id}.webp`;
 
   const descriptionLines = description.split('\n');
@@ -29,17 +32,23 @@ const SingleProduct = ({ products, addToCart, cart, handleCheckout, removeFromCa
           <h2>{name}</h2>
           <hr className="decorative-line-productDetails" />
           <p className='firstParagraph'>
-            {t('singleProduct.price')}: {price}€ <br/>
+            {t('singleProduct.price')}: {price}fr <br/>
           </p>
 
           <p className='secondParagraph'>
             ({t('singleProduct.priceNote')})
           </p>
-          
+
+          {materials && (
+            <p>
+              {materials}
+            </p>
+          )}
+
           {descriptionLines.map((line, index) => (
             <p key={index}>{line}</p>
           ))}
-          <p>{t('singleProduct.material')}</p>
+
         </div>
         <div className="product-image">
           <img src={productImage} alt={name} />

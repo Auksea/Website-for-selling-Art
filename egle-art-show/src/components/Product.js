@@ -5,8 +5,9 @@ import './Product.css';
 
 const Product = ({ product }) => {
   const { t } = useTranslation();
+  const { id, price } = product;
 
-  const { id, name, price } = product;
+  const name = t(`singleProduct.products.${id}.name`);
   const productImage = `/pics/pic${id}.webp`;
 
   return (
@@ -16,7 +17,7 @@ const Product = ({ product }) => {
           <img src={productImage} alt={name} />
         </div>
         <h3>{name}</h3>
-        <p>{t('product.price')}: {price}€</p>
+        <p>{t('product.price')}: {price}fr</p>
       </Link>
     </div>
   );

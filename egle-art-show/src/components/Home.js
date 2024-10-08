@@ -32,7 +32,7 @@ const Home = () => {
           <div className="column left">
             <img
               className="centered-img"
-              src="/pics/pic12.webp"
+              src="/pics/background2.webp"
               alt="Artwork"
             />
           </div>

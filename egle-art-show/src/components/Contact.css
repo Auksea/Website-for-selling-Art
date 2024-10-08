@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f8f8f8;
-  padding: 20px; /* Add padding for smaller screens */
+  padding: 20px;
 }
 
 .row {
@@ -19,8 +19,8 @@
   background-color: #f8f8f8;
   border-radius: 10px;
   box-shadow: 10px rgba(0, 0, 0, 0.3);
-  width: 100%; /* Make the width 100% */
-  max-width: 600px; /* Limit max-width */
+  width: 100%;
+  max-width: 600px;
   margin-bottom: 80px;
 }
 
@@ -43,7 +43,7 @@
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-size: 16px; /* Set a base font size */
+  font-size: 16px;
 }
 
 .contact-form button {
@@ -59,10 +59,16 @@
   background-color: #85809a;
 }
 
-.contact-form .error-message,
-.contact-form .success-message {
+.contact-form .error-message{
+  font-size: 40px;
   margin-top: 80px;
   color: red;
+}
+
+.contact-form .success-message {
+  font-size: 40px;
+  margin-top: 80px;
+  color: green;
 }
 
 .decorative-line {

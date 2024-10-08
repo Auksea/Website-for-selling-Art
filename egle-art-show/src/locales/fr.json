@@ -20,32 +20,150 @@
   "paintings.painting3": "Le principal objectif de l'abstraction dans l'art n'est pas de raconter une histoire, mais d'encourager l'implication et l'imagination",
   "paintings.painting4": "Les artistes abstraits utilisent une variété de techniques pour créer leur travail, mêlant moyens traditionnels et idées plus expérimentales",
   "paintings.painting5": "Liberté de forme et d'interprétation",
-  "singleProduct.loading": "Chargement...",
-  "singleProduct.productNotFound": "Produit non trouvé",
-  "singleProduct.price": "Prix",
-  "singleProduct.priceNote": "Ceci est seulement le prix initial à partir duquel nous pouvons négocier, contactez-moi personnellement",
-  "singleProduct.addToCart": "Ajouter au panier",
-  "singleProduct.size": "Taille",
-  "singleProduct.material": "Acrylique, textures de gesso, mélangé. Toile 100% coton",
-  "products": {
-    "19": { "description": "Taille : 30*30*1.5cm" },
-    "20": { "description": "Taille : 30*40*1.5cm" },
-    "21": { "description": "Taille comme un seul - 50*40*1.5cm / séparé 20*50*1.5 cm" },
-    "22": { "description": "Taille : 50*40cm" },
-    "23": { "description": "Taille : 30*24*1.5cm" },
-    "24": { "description": "Taille : 50*70*1.5cm" },
-    "25": { "description": "Taille : 40*30*1.5cm" },
-    "26": { "description": "Taille : 30*24*1.5cm" },
-    "27": { "description": "Taille : 50*60cm" },
-    "28": { "description": "Taille : 40*40*1.5cm" },
-    "29": { "description": "Taille : 50*60*1.5cm" },
-    "30": { "description": "Description sur la peinture" },
-    "32": { "description": "Taille : 50*40cm" },
-    "33": { "description": "Taille : 50*70*1.5cm" },
-    "34": { "description": "Taille comme un seul - 60*40*1.5 cm / séparé 40*30*1.5 cm" },
-    "35": { "description": "Taille : 32*41*1.5cm" },
-    "36": { "description": "Taille : 24*30*1.5cm" }
-  },
+    "singleProduct": {
+      "loading": "Chargement...",
+      "productNotFound": "Produit non trouvé",
+      "price": "Prix",
+      "priceNote": "Ceci n'est qu'un prix initial à partir duquel nous pouvons négocier, contactez-moi personnellement",
+      "material": "Acrylique, textures de gesso, mixte. Toile 100% coton",
+      "products": {
+        "19": {
+          "name": "Point",
+          "description": "Taille : 30*30*1.5cm",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "20": {
+          "name": "Très froid",
+          "description": "Taille : 30*40*1.5cm",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "21": {
+          "name": "Succès",
+          "description": "Taille en une seule pièce : 50*40*1.5cm / séparée : 20*50*1.5cm",
+          "materials": "Textures de gesso, mixte sur toile"
+        },
+        "22": {
+          "name": "Intégration de l'âme",
+          "description": "Taille : 50*40cm",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "23": {
+          "name": "Pensées",
+          "description": "Taille : 30*24*1.5cm",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "24": {
+          "name": "Été indien",
+          "description": "Taille : 50*70*1.5cm",
+          "materials": "Acrylique, textures gesso,-mixte. Sur toile"
+        },
+        "25": {
+          "name": "Le début de l'infini",
+          "description": "Taille : 40*30*1.5cm",
+          "materials": "Acrylique, textures gesso,-mixte. Sur toile"
+        },
+        "26": {
+          "name": "Danse des fées",
+          "description": "Taille : 30*24*1.5cm",
+          "materials": "Acrylique, textures gesso,-mixte. Sur toile"
+        },
+        "27": {
+          "name": "En bas",
+          "description": "Taille : 50*60cm",
+          "materials": "Acrylique, textures gesso,-mixte. Sur toile"
+        },
+        "28": {
+          "name": "Objectif",
+          "description": "Taille : 40*40*1.5cm",
+          "materials": "Acrylique, textures gesso,-mixte. Sur toile"
+        },
+        "29": {
+          "name": "Au-dessus de",
+          "description": "Taille : 50*60*1.5cm",
+          "materials": "Acrylique, textures gesso,-mixte. Sur toile"
+        },
+        "30": {
+          "name": "De loin",
+          "description": "Description du tableau",
+          "materials": "Acrylique, textures gesso,-mixte. Sur toile"
+        },
+        "31": {
+          "name": "Vision",
+          "description": "Taille : 50*40cm",
+          "materials": "Acrylique sur toile"
+        },
+        "32": {
+          "name": "L'océan",
+          "description": "Taille : 50*70cm",
+          "materials": "Acrylique sur toile"
+        },
+        "33": {
+          "name": "Création de la planète",
+          "description": "Taille: 30*40cm - + 30*40cm",
+          "materials": "Acrylique sur toile"
+        },
+        "34": {
+          "name": "Espoir",
+          "description": "Taille : 32*41cm",
+          "materials": "Acrylique sur toile"
+        },
+        "35": {
+          "name": "Arbre",
+          "description": "Taille : 24*30cm",
+          "materials": "Acrylique sur toile"
+        },
+        "36": {
+          "name": "Naissance",
+          "description": "Taille : 50*60cm",
+          "materials": "Acrylique sur toile"
+        },
+        "37": {
+          "name": "D'un autre monde",
+          "description": "Taille : 24*30cm et 24*30cm",
+          "materials": "Acrylique sur toile"
+        },
+        "38": {
+          "name": "Sans titre 4",
+          "description": "Aucune description disponible",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "39": {
+          "name": "Sans titre 5",
+          "description": "Aucune description disponible",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "40": {
+          "name": "Sans titre 6",
+          "description": "Aucune description disponible",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "41": {
+          "name": "Sans titre 7",
+          "description": "Aucune description disponible",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "42": {
+          "name": "Sans titre 8",
+          "description": "Aucune description disponible",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "43": {
+          "name": "Sans titre 9",
+          "description": "Aucune description disponible",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "44": {
+          "name": "Sans titre 10",
+          "description": "Aucune description disponible",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        },
+        "45": {
+          "name": "Sans titre 11",
+          "description": "Aucune description disponible",
+          "materials": "Acrylique, textures de gesso, mixte. Sur toile"
+        }
+      }
+    },  
   "store": {
     "title": "Magasin"
   },

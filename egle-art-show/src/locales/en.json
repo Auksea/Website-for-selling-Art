@@ -19,29 +19,149 @@
   "paintings.painting3": "The main purpose of abstraction in art is not to tell a story, but to encourage involvement and imagination",
   "paintings.painting4": "Abstract artists use a variety of techniques to create their work, mixing traditional means with more experimental ideas",
   "paintings.painting5": "Freedom of form and interpretation",
-  "singleProduct.loading": "Loading...",
-  "singleProduct.productNotFound": "Product not found",
-  "singleProduct.price": "Price",
-  "singleProduct.priceNote": "This is only the initial price from which we can negotiate, contact me personally",
-  "singleProduct.material": "Acrylic, gesso-textures, mixed. Canvas 100% cotton",
-  "products": {
-    "19": { "description": "Size: 30*30*1.5cm" },
-    "20": { "description": "Size: 30*40*1.5cm" },
-    "21": { "description": "Size as one - 50*40*1.5cm / separate 20*50*1.5 cm" },
-    "22": { "description": "Size: 50*40cm" },
-    "23": { "description": "Size: 30*24*1.5cm" }, 
-    "24": { "description": "Size: 50*70*1.5cm" },
-    "25": { "description": "Size: 40*30*1.5cm" },
-    "26": { "description": "Size: 30*24*1.5cm" },
-    "27": { "description": "Size: 50*60cm" },
-    "28": { "description": "Size: 40*40*1.5cm" },
-    "29": { "description": "Size: 50*60*1.5cm" },
-    "30": { "description": "Description about the painting" },
-    "32": { "description": "Size: 50*40cm" },
-    "33": { "description": "Size: 50*70*1.5cm" },
-    "34": { "description": "Size as one - 60*40*1.5 cm / separate 40*30*1.5 cm" },
-    "35": { "description": "Size: 32*41*1.5cm" },
-    "36": { "description": "Size: 24*30*1.5cm" }
+  "singleProduct": {
+    "loading": "Loading...",
+    "productNotFound": "Product not found",
+    "price": "Price",
+    "priceNote": "This is only the initial price from which we can negotiate, contact me personally",
+    "material": "Acrylic, gesso-textures, mixed. Canvas 100% cotton",
+    "products": {
+    "19": {
+      "name": "Point",
+      "description": "Size: 30*30*1.5cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "20": {
+      "name": "Very Cold",
+      "description": "Size: 30*40*1.5cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "21": {
+      "name": "Success",
+      "description": "Size in one piece: 50*40*1.5cm / separated: 20*50*1.5cm",
+      "materials": "Gesso textures, mixed on canvas"
+    },
+    "22": {
+      "name": "Integration of the Soul",
+      "description": "Size: 50*40cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "23": {
+      "name": "Thoughts",
+      "description": "Size: 30*24*1.5cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "24": {
+      "name": "Indian Summer",
+      "description": "Size: 50*70*1.5cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "25": {
+      "name": "The Beginning of Infinity",
+      "description": "Size: 40*30*1.5cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "26": {
+      "name": "Dance of the Fairies",
+      "description": "Size: 30*24*1.5cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "27": {
+      "name": "Down Below",
+      "description": "Size: 50*60cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "28": {
+      "name": "Goal",
+      "description": "Size: 40*40*1.5cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "29": {
+      "name": "Above",
+      "description": "Size: 50*60*1.5cm",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "30": {
+      "name": "From Afar",
+      "description": "Painting description",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "31": {
+      "name": "Vision",
+      "description": "Size: 50*40cm",
+      "materials": "Acrylic on canvas"
+    },
+    "32": {
+      "name": "The Ocean",
+      "description": "Size: 50*70cm",
+      "materials": "Acrylic on canvas"
+    },
+    "33": {
+      "name": "Creation of the Planet",
+      "description": "Size: 30*40cm - + 30*40cm",
+      "materials": "Acrylic on canvas"
+    },
+    "34": {
+      "name": "Hope",
+      "description": "Size: 32*41cm",
+      "materials": "Acrylic on canvas"
+    },
+    "35": {
+      "name": "Tree",
+      "description": "Size: 24*30cm",
+      "materials": "Acrylic on canvas"
+    },
+    "36": {
+      "name": "Birth",
+      "description": "Size: 50*60cm",
+      "materials": "Acrylic on canvas"
+    },
+    "37": {
+      "name": "From Another World",
+      "description": "Size: 24*30cm and 24*30cm",
+      "materials": "Acrylic on canvas"
+    },
+    "38": {
+      "name": "Untitled 4",
+      "description": "No description available",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "39": {
+      "name": "Untitled 5",
+      "description": "No description available",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "40": {
+      "name": "Untitled 6",
+      "description": "No description available",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "41": {
+      "name": "Untitled 7",
+      "description": "No description available",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "42": {
+      "name": "Untitled 8",
+      "description": "No description available",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "43": {
+      "name": "Untitled 9",
+      "description": "No description available",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "44": {
+      "name": "Untitled 10",
+      "description": "No description available",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    },
+    "45": {
+      "name": "Untitled 11",
+      "description": "No description available",
+      "materials": "Acrylic, gesso textures, mixed. On canvas"
+    }
+  }
   },
   "store": {
     "title": "Store"
@@ -71,3 +191,4 @@
     }
   }
 }
+
